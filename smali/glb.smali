@@ -1,0 +1,102 @@
+.class public final Lglb;
+.super Ljava/lang/Object;
+.source "PG"
+
+# interfaces
+.implements Lpmn;
+
+
+# instance fields
+.field private final a:Lpng;
+
+.field private final b:Lpng;
+
+
+# direct methods
+.method public constructor <init>(Lpng;Lpng;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lglb;->a:Lpng;
+
+    iput-object p2, p0, Lglb;->b:Lpng;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic get()Ljava/lang/Object;
+    .locals 5
+
+    iget-object v0, p0, Lglb;->a:Lpng;
+
+    check-cast v0, Lheo;
+
+    invoke-virtual {v0}, Lheo;->a()Lhen;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lglb;->b:Lpng;
+
+    invoke-interface {v1}, Lpng;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lgiy;
+
+    new-instance v2, Lhem;
+
+    iget-object v3, v0, Lhen;->a:Lpng;
+
+    invoke-interface {v3}, Lpng;->get()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lgny;
+
+    const/4 v4, 0x1
+
+    invoke-static {v3, v4}, Lhen;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lgny;
+
+    iget-object v0, v0, Lhen;->b:Lpng;
+
+    invoke-interface {v0}, Lpng;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lluz;
+
+    const/4 v4, 0x2
+
+    invoke-static {v0, v4}, Lhen;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lluz;
+
+    const/4 v4, 0x3
+
+    invoke-static {v1, v4}, Lhen;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lgiy;
+
+    invoke-direct {v2, v3, v0, v1}, Lhem;-><init>(Lgny;Lluz;Lgiy;)V
+
+    const-string v0, "Cannot return null from a non-@Nullable @Provides method"
+
+    invoke-static {v2, v0}, Lcqy;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lgiy;
+
+    return-object v0
+.end method

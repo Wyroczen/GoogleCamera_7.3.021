@@ -1,0 +1,44 @@
+.class final synthetic Lmnb;
+.super Ljava/lang/Object;
+.source "PG"
+
+# interfaces
+.implements Lpng;
+
+
+# static fields
+.field static final a:Lpng;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lmnb;
+
+    invoke-direct {v0}, Lmnb;-><init>()V
+
+    sput-object v0, Lmnb;->a:Lpng;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 1
+
+    new-instance v0, Lmnc;
+
+    invoke-direct {v0}, Lmnc;-><init>()V
+
+    return-object v0
+.end method

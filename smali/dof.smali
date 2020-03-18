@@ -1,0 +1,56 @@
+.class final synthetic Ldof;
+.super Ljava/lang/Object;
+.source "PG"
+
+# interfaces
+.implements Lnzv;
+
+
+# static fields
+.field static final a:Lnzv;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Ldof;
+
+    invoke-direct {v0}, Ldof;-><init>()V
+
+    sput-object v0, Ldof;->a:Lnzv;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    sget-object p1, Ldje;->j:Ldje;
+
+    goto :goto_0
+
+    :cond_0
+    sget-object p1, Ldje;->f:Ldje;
+
+    :goto_0
+    return-object p1
+.end method

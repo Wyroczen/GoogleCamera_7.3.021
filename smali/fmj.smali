@@ -1,0 +1,26 @@
+.class public final Lfmj;
+.super Ljava/lang/Object;
+.source "PG"
+
+# interfaces
+.implements Lemc;
+
+
+# instance fields
+.field public final synthetic a:Lcom/google/android/apps/camera/legacy/lightcycle/storage/LocalSessionStorage;
+
+.field public final synthetic b:Lfnb;
+
+
+# direct methods
+.method public constructor <init>(Lfnb;Lcom/google/android/apps/camera/legacy/lightcycle/storage/LocalSessionStorage;)V
+    .locals 0
+
+    iput-object p1, p0, Lfmj;->b:Lfnb;
+
+    iput-object p2, p0, Lfmj;->a:Lcom/google/android/apps/camera/legacy/lightcycle/storage/LocalSessionStorage;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
